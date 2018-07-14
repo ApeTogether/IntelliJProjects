@@ -6,6 +6,7 @@ public class Demo1 {
     public static void main(String[] args) {
         sayHello("Chris", "how are you !");
         sayGoodBye("Suan", "women");
+        sayGoodBye();
     }
 
 
@@ -14,7 +15,11 @@ public class Demo1 {
 
     }
 
-    public static void sayGoodBye(String userName, String gender) {
+    private static void sayGoodBye() {
+        System.out.println("Goodbye!");
+    }
+
+    private static void sayGoodBye(String userName, String gender) {
         if ("man".equalsIgnoreCase(gender)) {
             System.out.println("Goodbye, Mt " + userName);
         } else if ("women".equalsIgnoreCase(gender)) {
