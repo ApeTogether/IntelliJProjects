@@ -8,13 +8,13 @@ import main.com.chris.demo.User;
  * @Description
  */
 public class Test01 {
-
-    public static void main(String[] args) {
-        User user = new User();
-        User user2 = new User("Chris", 21);
-
-        System.out.println(user.toString());
-        System.out.println(user2.toString());
-    }
-
+	
+	public static void main(String[] args) {
+		User user = new User();
+		User user2 = new User("Chris", 21);
+		
+		System.out.println(user.toString());
+		System.out.println(user2.toString());
+	}
+	
 }
