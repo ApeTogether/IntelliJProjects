@@ -1,6 +1,6 @@
 # ignore IntelliJ IDEA project files
 *.iml
-.idea
+*.idea
 *.class
 
 # Log file
