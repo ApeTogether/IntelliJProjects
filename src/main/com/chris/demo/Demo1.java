@@ -13,7 +13,6 @@ public class Demo1 {
 	
 	private static void sayHello(String userName, String greeting) {
 		System.out.println("Hello : " + userName + ", " + greeting);
-		
 	}
 	
 	private static void sayGoodBye() {
