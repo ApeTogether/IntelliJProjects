@@ -1,0 +1,32 @@
+<persistence>
+    version = "2.1"
+    xmlns = "http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns = "http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation = "http://xmlns.jcp.org/xml/ns/persistence
+    http://xmlns.jcp.org/xml/ns/persistence_2_1.xsd"
+    <!--配置持久化单元-->
+    <persistence_unit name="HelloWorldPU">
+        <class>com.lzb.mitan</class>
+        <!--为映射的类禁用扫描-->
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <!--设置属性-->
+        <properties>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
+            <!-- 驱动类型:数据库类型:thin:@ip地址:端口:监听器名称 -->
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle9Dialect"/>
+            <!-- 访问数据库用户 -->
+            <property name="hibernate.connection.username" value="xiaoxin"/>
+            <!-- 访问数据库密码 -->
+            <property name="hibernate.connection.password" value="111111"/>
+            <!--create是建表、清空数据库数据 update可以修改表中的数据、可以修改表结构、不可以建表 none只可以修改表中的数据，不编辑表结构 -->
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
+            <!-- 显示sql语句 -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- 输出格式化后的sql,更方便查看 -->
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence_unit>
+</persistence>
