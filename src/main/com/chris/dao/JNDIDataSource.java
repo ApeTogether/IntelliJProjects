@@ -8,7 +8,8 @@ public class JNDIDataSource {
 	@Bean
 	public JndiObjectFactoryBean dataSource() {
 		JndiObjectFactoryBean jndiObjFB = new JndiObjectFactoryBean();
-		jndiObjFB.setJndiName("jdbc/SpittrDS");
+		//jndiObjFB.setJndiName("jdbc/SpittrDS");
+        jndiObjFB.setJndiName("jdbc/dataSource");
 		jndiObjFB.setResourceRef(true);
 		jndiObjFB.setProxyInterface(javax.sql.DataSource.class);
 		return jndiObjFB;
