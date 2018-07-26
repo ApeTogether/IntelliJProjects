@@ -1,13 +1,14 @@
-package main.com.chris.repository;
+package com.chris.repository;
 
-import main.com.chris.entity.Spitter;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.chris.entity.Spitter;
 
 /**
  * @Auther Chris Lee
  * @Date 7/25/2018 17:20
  * @Description
  */
-public interface SpitterRepository extends JpaRepository<Spitter, Long> {
-	Spitter findSpitterById(String id);
+public interface SpitterRepository {
+	Spitter save(Spitter spitter);
+	
+	Spitter findByUsername(String username);
 }

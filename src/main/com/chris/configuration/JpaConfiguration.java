@@ -1,4 +1,4 @@
-package main.com.chris.configuration;
+package com.chris.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -10,6 +10,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  */
 
 @Configuration
-@EnableJpaRepositories(basePackages = "main.com.chris.repository")
+@EnableJpaRepositories(basePackages = "com.chris.repository")
 public class JpaConfiguration {
 }

@@ -1,6 +1,7 @@
-package main.com.chris.initializer;
+package com.chris.initializer;
 
-import main.com.chris.configuration.WebConfig;
+import com.chris.configuration.RootConfig;
+import com.chris.web.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
@@ -11,7 +12,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class[] {RootConig.class};
+		return new Class[] {RootConfig.class};
 	}
 	
 	@Override

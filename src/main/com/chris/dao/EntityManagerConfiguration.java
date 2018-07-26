@@ -1,4 +1,4 @@
-package main.com.chris.dao;
+package com.chris.dao;
 
 
 public class EntityManagerConfiguration {

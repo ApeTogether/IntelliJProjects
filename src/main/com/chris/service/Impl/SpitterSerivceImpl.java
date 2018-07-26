@@ -1,8 +1,8 @@
-package main.com.chris.service.Impl;
+package com.chris.service.Impl;
 
-import main.com.chris.entity.Spitter;
-import main.com.chris.repository.SpitterRepository;
-import main.com.chris.service.SpitterService;
+import com.chris.entity.Spitter;
+import com.chris.repository.SpitterRepository;
+import com.chris.service.SpitterService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -17,7 +17,12 @@ public class SpitterSerivceImpl implements SpitterService {
 	
 	@Override
 	public Spitter findSpitterById(String id) {
-		
-		return spitterRepository.findSpitterById(id);
+		return null;
 	}
+	
+	/*
+	 * @Override public Spitter findSpitterById(String id) {
+	 * 
+	 * return spitterRepository.findSpitterById(id); }
+	 */
 }

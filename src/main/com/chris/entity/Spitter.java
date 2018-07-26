@@ -1,6 +1,12 @@
-package main.com.chris.entity;
+package com.chris.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * @Auther Chris Lee
@@ -9,12 +15,28 @@ import lombok.Data;
  */
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Spitter {
+	private Long id;
 	
-	private long id;
+	@NotNull
+	@Size(min = 5, max = 16)
+	private String username;
 	
-	private String name;
+	@NotNull
+	@Size(min = 5, max = 25)
+	private String password;
 	
-	private int aga;
+	@NotNull
+	@Size(min = 2, max = 30)
+	private String firstName;
 	
+	@NotNull
+	@Size(min = 2, max = 30)
+	private String lastName;
+	
+	@NotNull
+	@Email
+	private String email;
 }

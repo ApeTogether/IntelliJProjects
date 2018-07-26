@@ -1,6 +1,6 @@
-package main.com.chris.service;
+package com.chris.service;
 
-import main.com.chris.entity.Spitter;
+import com.chris.entity.Spitter;
 
 /**
  * @Auther Chris Lee
