@@ -15,16 +15,15 @@ import java.util.Date;
  * @Description
  */
 @Data
-@NoArgsConstructor
 @RequiredArgsConstructor
 @AllArgsConstructor
 public class Spittle {
 	
-	private final Long id = null;
+	private final Long id;
 	
-	private final String message = null;
+	private final String message;
 	
-	private final Date time = null;
+	private final Date time;
 	
 	private Double latitude;
 	
