@@ -26,7 +26,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "sayHello/", method = GET)
 	public String home(Model model) {
-        model.addAttribute(version);
+        model.addAttribute("version",version);
 		return "sayHello";
 	}
 	
