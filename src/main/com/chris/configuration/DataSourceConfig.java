@@ -29,8 +29,8 @@ public class DataSourceConfig {
 	@Bean
 	public JndiObjectFactoryBean dataSourceOfJNDI() {
 		JndiObjectFactoryBean jndiObjFB = new JndiObjectFactoryBean();
-		jndiObjFB.setJndiName("jdbc/SpittrDS");
-		// jndiObjFB.setJndiName("jdbc/dataSource");
+        // jndiObjFB.setJndiName("jdbc/SpittrDS");
+		jndiObjFB.setJndiName("jdbc/dataSource");
 		jndiObjFB.setResourceRef(true);
 		jndiObjFB.setProxyInterface(javax.sql.DataSource.class);
 		return jndiObjFB;

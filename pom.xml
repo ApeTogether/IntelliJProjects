@@ -20,6 +20,7 @@
         <springweb-version>4.2.9.RELEASE</springweb-version>
         <spring.version>4.2.9.RELEASE</spring.version>
         <commons-lang3.version>3.7</commons-lang3.version>
+        <swagger-version>2.6.0</swagger-version>
     </properties>
 
     <dependencies>
@@ -95,6 +96,16 @@
             <groupId>taglibs.wso2</groupId>
             <artifactId>taglibs.standard</artifactId>
             <version>1.1.2.wso2v1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger-version}</version>
         </dependency>
     </dependencies>
 

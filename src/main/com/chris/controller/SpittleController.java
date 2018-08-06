@@ -25,7 +25,6 @@ public class SpittleController {
 	
 	@RequestMapping(value = "{spittleId}", method = GET)
 	public String showOneSpittle(@PathVariable(value = "spittleId") Long spittleId, Model model) {
-		
 		model.addAttribute(spittleService.findOne(spittleId));
 		return "spittle";
 	}
