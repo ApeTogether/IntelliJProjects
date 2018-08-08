@@ -1,10 +1,7 @@
 package com.chris.web;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
@@ -28,6 +25,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = {"com.chris.web", "com.chris.controller"})
+@EnableAspectJAutoProxy
 @PropertySource("classpath:version.properties")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
@@ -72,4 +70,9 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 			new Contact("Chris.Le@asiainspection.com", "", ""), "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0");
 		return apiInfo;
 	}
+
+   /* @Bean
+    public HomeControllerAspect homeControllerAspect() {
+        return new HomeControllerAspect();
+    }*/
 }

@@ -23,13 +23,13 @@ public class HomeController {
 	/*
 	 * @RequestMapping(value = "sayHello", method = GET) public String home() { return "sayHello"; }
 	 */
-	
+
 	@RequestMapping(value = "sayHello/", method = GET)
 	public String home(Model model) {
         model.addAttribute("version",version);
 		return "sayHello";
 	}
-	
+
 
 
 }

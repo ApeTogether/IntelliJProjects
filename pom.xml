@@ -21,6 +21,7 @@
         <spring.version>4.2.9.RELEASE</spring.version>
         <commons-lang3.version>3.7</commons-lang3.version>
         <swagger-version>2.6.0</swagger-version>
+        <aspectjweaver.version>1.9.1</aspectjweaver.version>
     </properties>
 
     <dependencies>
@@ -107,6 +108,18 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger-version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.version}</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
