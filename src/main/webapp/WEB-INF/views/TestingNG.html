@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Title</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="">
+	<label ng-init="v1='Chris';v2='Li'"></label>
+	<p>My first NG expression: {{1*2}}</p>
+	<p>Name: <input type="text" ng-model="user_name"></p>
+	<p>Gender: <input type="text" ng-model="user_gender"></p>
+	the input is : <p ng-bind="user_name + ' ' + user_gender"></p>
+	{{user_name}}
+	show initial variable : <label ng-bind='v1 + " " +v2'></label>
+	{{v1 + " " + v2}}
+
+
+</div>
+</body>
+</html>

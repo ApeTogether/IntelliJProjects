@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Title</title>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+	<label ng-init="person={address:'CN',age:23}"/>
+	Init Object : <input type="text" value="{{person.address + ' ' + person.age}}"/>
+	<br/>
+	<label ng-init="array=[1,2,'Chris','Man',true]"/>
+	Init Array : {{array[0] +' ' + array[1] + ' ' + array[3] + ' ' +array[array.length-1]}}
+	<br/>
+	<input type="text" ng-model="firstName"/>
+	<input type="text" ng-model="lastName"/>
+	<br/>
+	Repeat Objects
+	<label ng-init="country=[{address:'CN',age:23},{address:'US',age:43},{address:'UK',age:24},{address:'CA',age:12}]"/>
+	<li ng-repeat="c in country">
+		{{c.address + ' ' + c.age}}
+	</li>
+</div>
+
+<script type="" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</body>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope) {
+        $scope.firstName = "John";
+        $scope.lastName = "Doe";
+    });
+</script>
+</html>
