@@ -36,7 +36,7 @@ public class JdbcSpitterRepository implements SpitterRepository {
 	@Override
 	public Spitter save(Spitter spitter) {
 		jdbc.update("insert into tmp_Spitter (username, password, first_name, last_name, email)" + " values (?, ?, ?, ?, ?)",
-			spitter.getUsername(),
+			spitter.getUserName(),
 			spitter.getPassword(),
 			spitter.getFirstName(),
 			spitter.getLastName(),

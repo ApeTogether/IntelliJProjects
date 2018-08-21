@@ -22,7 +22,7 @@ public class Spitter {
 	
 	@NotNull
 	@Size(min = 5, max = 16)
-	private String username;
+	private String userName;
 	
 	@NotNull
 	@Size(min = 5, max = 25)
