@@ -21,7 +21,7 @@ public class Spitter {
 	private Long id;
 	
 	@NotNull
-	@Size(min = 5, max = 16)
+	@Size(min = 5, max = 16, message = "the {validatedValue} must be between {min} and {max} ")
 	private String userName;
 	
 	@NotNull
